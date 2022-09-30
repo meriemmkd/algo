@@ -1,0 +1,22 @@
+ALGORITHM checkpoint
+VAR numOfvowls = INTEGER;
+    numOfwords = INTEGER ;
+    i = INTEGER ;
+    character = INTEGER;
+    
+BEGIN
+numOfvowls = 0 ;
+numOfwords = 0 ;
+character = 0 ;
+for (i=0) to (str.length) do {
+    i = i+1 ;
+    if str[i] =! " " than 
+    character = character +1 ;
+    if str[i] = "A" or "E" or "U" or "I" or "O" or "a" or "i" or "e" or "u" or "o" than 
+    numOfvowls = numOfvowls +1 ;
+    if str[i] = " " than 
+    numOfwords = numOfwords +1 ;
+};
+writeln ("There sentence has " , character , " character " , numOfwords , "word" , numOfvowls , "vowel" ) ;
+
+END
